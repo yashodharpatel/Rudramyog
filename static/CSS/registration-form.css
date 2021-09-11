@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.registration {
+    display: flex;
+    align-items: center;
+}
+
+.registration .registration-container {
+    width: 50%;
+    margin: 2% auto;
+    padding: 35px;
+    background-color: #f6f6f6;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.registration .registration-container .heading {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    word-spacing: 4px;
+    width: 100%;
+}
+
+.registration .registration-container .line {
+    background-color: #b6b6b6;
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 35px 0;
+}
+
+.registration .registration-container .form {
+    width: 100%;
+}
+
+.registration-container .form .field {
+    margin-bottom: 2.5%;
+}
+
+.registration-container .form .field .input-text {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.registration-container .form .field span {
+    color: red;
+}
+
+.registration-container .form .field .form-input {
+    width: 100%;
+    padding: 0.6rem 0.85rem;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    transition: border 0.15s ease-in-out;
+    border: 1px solid #ced4da;
+    color: #495057;
+    /* line-height: 1.5; */
+    background-clip: padding-box;
+    border-radius: 4px;
+}
+
+.registration-container .form .field .form-input:focus {
+    outline: none;
+    border: 1px solid lightskyblue;
+}
+
+.registration-container .form .address #address {
+    resize: vertical;
+}
+
+.registration-container .form .class-type table {
+    width: 100%;
+
+    /* display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap; */
+}
+
+.registration-container .form .class-type table thead {
+    background-color: #d6d6d6;
+}
+
+.registration-container .form .class-type table,
+.registration-container .form .class-type th,
+.registration-container .form .class-type td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+.registration-container .form .class-type table tr td:nth-child(4) {
+    text-align: center;
+}
+
+.registration-container
+    .form
+    .terms-and-conditions
+    .terms-and-conditions-heading {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.registration-container .form .terms-and-conditions .terms-and-conditions-text {
+    margin: 20px 0;
+}
+
+.registration-container
+    .form
+    .terms-and-conditions
+    .terms-and-conditions-text
+    p {
+    text-indent: 40px;
+}
+
+.button-disabled {
+    background-color: #5979fab4;
+    cursor: not-allowed;
+}
+
+.button-enabled {
+    background-color: #597afa;
+    cursor: pointer;
+}

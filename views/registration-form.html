@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <link rel="stylesheet" href="/static/CSS/registration-form.css">
+    <link rel="stylesheet" href="/static/CSS/responsive.css" media="screen and (max-width: 1100px)">
+    <script defer src="/static/Javascript/script.js"></script>
+    <script defer src="https://kit.fontawesome.com/676c98e749.js" crossorigin="anonymous"></script>
+    <title>Registration Form • RUDRA MYOG</title>
+</head>
+
+<body oncontextmenu="disableRightclick()">
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="/views/home.html"><img src="/src/logo/logo.jpeg" alt="logo" height="70" width="70"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/views/index.html">Home</a></li>
+            <li><a href="/views/about.html">About</a></li>
+            <li><a href="/views/register.html">Register</a></li>
+            <li><a href="/views/classdemo.html">Class Demo</a></li>
+            <li><a href="/views/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="back-to-top-button">
+        <a href="#">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+
+    <div class="snackbar" id="snackbar">Right click is disabled!</div>
+
+    <section class="registration">
+        <div class="registration-container">
+            <div class="heading">Registration Form at RUDRAMYOG</div>
+            <hr class="line">
+            <div class="form">
+                <form action="" class="registration-form" autocomplete="off">
+                    <div class="name field">
+                        <div class="name-text input-text">Name <span>*</span></div>
+                        <input class="form-input" type="text" name="Name" id="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="date field">
+                        <div class="date-text input-text">Date <span>*</span></div>
+                        <input class="form-input" type="date" name="Date" id="date" required>
+                    </div>
+
+                    <div class="age field">
+                        <div class="age-text input-text">Age <span>*</span></div>
+                        <input class="form-input" type="number" name="Age" id="age" placeholder="Your Age" required>
+                    </div>
+
+                    <div class="gender field">
+                        <div class="gender-text input-text">Gender <span>*</span></div>
+                        <select class="form-input" name="Gender" id="gender" required>
+                            <option value="" disabled selected hidden>Please Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="N/A">N/A</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-number field">
+                        <div class="contact-number-text input-text">Contact number (Preferebly Whatsapp Number)
+                            <span>*</span>
+                        </div>
+                        <input class="form-input" type="number" name="Contact number" id="contact-number"
+                            placeholder="Your Contact Number" required>
+                    </div>
+
+                    <div class="email field">
+                        <div class="email-text input-text">Email <span>*</span></div>
+                        <input class="form-input" type="email" name="Email" id="email"
+                            placeholder="youremail@example.com" required>
+                    </div>
+
+                    <div class="address field">
+                        <div class="address-text input-text">Address</div>
+                        <textarea class="form-input" name="Address" id="address" cols="30" rows="4"
+                            placeholder="Your Address"></textarea>
+                    </div>
+
+                    <div class="health-issue field">
+                        <div class="health-issue-text input-text">Health Issue</div>
+                        <input class="form-input" type="text" name="Health Issue" id="health-issue"
+                            placeholder="Health Issue">
+                    </div>
+
+                    <div class="class-type field">
+                        <div class="class-type-text input-text">Select the Class <span>*</span></div>
+                        <table>
+                            <thead>
+                                <th>Select</th>
+                                <th>Class Type</th>
+                                <th>Suggested Age</th>
+                                <th>Fees per month</th>
+                                <th>Classes</th>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input class="form-input" type="radio" name="Classtype" value="Yoga for elders"
+                                            id="classtype" required>
+                                    </td>
+                                    <td>Yoga for Elders</td>
+                                    <td>45+ Years</td>
+                                    <td>₹ 999</td>
+                                    <td>Online From Mon to Fri for 1 Hour</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-input" type="radio" name="Classtype"
+                                            value="Special session for Women" id="classtype" required>
+                                    </td>
+                                    <td>Special Session for Women</td>
+                                    <td>Women of any age (Preferebly from 15-45 Years)</td>
+                                    <td>₹ 999</td>
+                                    <td>Online From Mon to Fri for 1 Hour</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-input" type="radio" name="Classtype" value="Yoga for Kids"
+                                            id="classtype" required>
+                                    </td>
+                                    <td>Yoga for Kids</td>
+                                    <td>5-14 Years</td>
+                                    <td>₹ 999</td>
+                                    <td>Online From Mon to Fri for 1 Hour</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-input" type="radio" name="Classtype"
+                                            value="Master your Energy" id="classtype" required>
+                                    </td>
+                                    <td>Master your Energy</td>
+                                    <td>16+ Years</td>
+                                    <td>₹ 799</td>
+                                    <td>Online From Mon to Fri for 1 Hour</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="terms-and-conditions field">
+                        <div class="terms-and-conditions-heading">Please read carefully:</div>
+                        <div class="terms-and-conditions-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid quam illo quas
+                                perferendis officia voluptatum, tempore amet vitae dignissimos minus id ex laboriosam
+                                nesciunt non earum doloremque odit deleniti totam facere a molestiae ad. Qui consectetur
+                                nesciunt sint minus molestiae voluptatem dolore dolorum veniam aut, quibusdam, eius
+                                fugiat praesentium?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid quam illo quas
+                                perferendis officia voluptatum, tempore amet vitae dignissimos minus id ex laboriosam
+                                nesciunt non earum doloremque odit deleniti totam facere a molestiae ad. Qui consectetur
+                                nesciunt sint minus molestiae voluptatem dolore dolorum veniam aut, quibusdam, eius
+                                fugiat praesentium?</p>
+                        </div>
+
+                        <div class="acceptance">
+                            <input class="acceptance-checkbox" type="checkbox" name="Terms-and-conditions"
+                                id="terms-and-conditions-checkbox" value="terms-and-conditions" required checked>
+                            I have read the above statement completely and understand its content. I give my
+                            concerns and I am willing to start yoga practice with RUDRAMYOG.
+                        </div>
+                    </div>
+
+                    <div class="submit-button">
+                        <button type="submit" name="Submit" value="Submit Registration Form" class="btn"
+                            id="submitButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="/src/images/lotus.png" alt="logo" height="65">
+                    <div class="heading">Rudra Myog</div>
+                </div>
+                <div class="line"></div>
+                <div class="copyright">&copy; 2021 <span><a href="#">rudramyog.com</a></span></div>
+            </div>
+            <div class="social-links">
+                <a href="http://facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="creator"><a href="http://instagram.com">Design by Yashodhar Patel</a></div>
+    </footer>
+
+</body>
+
+</html>

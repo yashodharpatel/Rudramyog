@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    cursor: default;
+    user-select: none;
+}
+
+.background {
+    background-image: url("/src/images/background.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    padding: 0% 7.5%;
+    background-color: white;
+}
+
+.transparent-navbar {
+    background-color: transparent;
+}
+
+.logo {
+    padding-left: 25px;
+}
+
+.logo img {
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0px 20px;
+    transition: all 0.5s;
+}
+
+.nav-links li .active {
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+/*introsection*/
+.introsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 65vh;
+    margin: auto;
+}
+
+.introsection .title {
+    font-weight: 700;
+    font-size: 250%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Bree Serif", serif;
+}
+
+.introsection .subtitle {
+    font-size: 160%;
+    line-height: 130%;
+    margin: 2vmax 0%;
+    text-align: justify;
+    /* font-family: "Raleway", sans-serif; */
+}
+
+.introsection .btn {
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+/* .introsection .btn:hover {
+    background-color: white;
+} */
+
+.introsection .btn a {
+    color: black;
+    text-decoration: none;
+}
+
+/*back-to-top-button*/
+.back-to-top-button {
+    background-color: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.back-to-top-button a i {
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    padding: 8px 14px;
+}
+
+.scrolling-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*snackbar for disabled right click*/
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/*aboutsection*/
+.aboutsection {
+    width: 65%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.aboutsection .heading {
+    font-size: 26px;
+    font-family: "Bree Serif", serif;
+    letter-spacing: 1.3px;
+}
+
+.aboutsection span {
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
+    letter-spacing: normal;
+    color: #d57a30;
+}
+
+.aboutsection .text {
+    text-align: justify;
+    font-size: 20px;
+    padding: 40px 0px;
+    line-height: 28px;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #597afa;
+    /* background-color: #1d1f27; */
+    color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease-in-out;
+}
+
+/* .btn:hover {
+    background-color: #5979fae7;
+} */
+
+/*services*/
+.services .heading {
+    background: rgb(0, 0, 0, 0.4) url("/src/services/background.webp");
+    background-blend-mode: darken;
+    background-size: 100%;
+    height: 52vh;
+    color: white;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .main-heading {
+    font-family: "Bree Serif", serif;
+    font-size: 45px;
+}
+
+.services .sub-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.services .services-cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 50px 75px;
+}
+
+.services .card {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    transition: all 0.5s ease;
+}
+
+.services .card:hover {
+    background-color: #fafafa;
+}
+
+.services .card .card-image {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.services .card .card-name {
+    font-size: 20px;
+    padding: 35px 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+.services .card .card-info {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.services .card .card-points {
+    line-height: 30px;
+    padding: 30px 0px;
+    font-size: 18px;
+    list-style-position: inside;
+}
+
+/*quotesection*/
+.quote-container {
+    background-color: #fdeeed;
+    text-align: center;
+}
+
+.quote-container .quote {
+    color: #2e2e2e;
+    font-size: 55px;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.2em;
+    padding: 120px 60px;
+    font-family: "Allison", cursive;
+}
+
+/*testimonials*/
+.testimonials {
+    padding: 50px;
+}
+
+.testimonials .heading {
+    text-align: center;
+    font-family: "Bree Serif", serif;
+    font-size: 35px;
+    padding: 15px 0px;
+}
+
+.carousel-cell {
+    width: 90%;
+    margin-right: 100px;
+}
+
+.testimonialContainer {
+    width: 65%;
+    margin: auto;
+    padding: 35px 0px;
+    line-height: normal;
+}
+
+.testimonialContainer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.testimonialContainer .profilePic {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+.testimonialContainer .response {
+    font-size: 20px;
+    padding: 25px 0px;
+    text-align: justify;
+}
+
+.testimonialContainer .name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #597afa;
+}
+
+.testimonialContainer .city {
+    margin-top: 7px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/*footer*/
+footer {
+    background-color: #1d1f27;
+    padding: 0% 10%;
+}
+
+footer .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 4% 0%;
+}
+
+.footer-links .footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links .footer .footer-logo {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links .footer-logo .heading {
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.footer-links .footer .line {
+    background-color: white;
+    height: 55px;
+    width: 3px;
+    margin: 0px 20px;
+    border-radius: 1.5px;
+}
+
+.footer-links .footer .copyright {
+    font-size: 18px;
+}
+
+.footer .copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links .social-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 12px;
+    font-size: 25px;
+}
+
+footer .line {
+    background-color: #a6a6a6;
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 1px;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+footer .creator {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    padding: 16px 0;
+}
+
+footer .creator a {
+    color: #a6a6a6;
+    text-decoration: none;
+}
+
+/*snackbar animations*/
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

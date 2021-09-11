@@ -1,0 +1,439 @@
+/*navbar*/
+.navbar {
+    background-color: white;
+    align-items: unset;
+    padding: 0%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    padding-left: 0px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    padding: 5px;
+    border: 5px solid gray;
+    border-radius: 8px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+}
+
+.nav-links {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    padding: 80px 0px;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+
+.nav-links.open {
+    clip-path: circle(1800px at 90% -10%);
+    -webkit-clip-path: circle(1800px at 90% -10%);
+    pointer-events: all;
+}
+
+.nav-links li {
+    opacity: 0;
+}
+
+.nav-links li a {
+    font-size: 25px;
+}
+
+.nav-links li .active {
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+.nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.1s;
+}
+
+.nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.2s;
+}
+
+.nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.3s;
+}
+
+.nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.4s;
+}
+
+.nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.5s;
+}
+
+.nav-links li:nth-child(6) {
+    transition: all 0.5s ease 0.6s;
+}
+
+.nav-links li:nth-child(7) {
+    transition: all 0.5s ease 0.7s;
+}
+
+li.fade {
+    opacity: 1;
+}
+
+/*introsection*/
+.introsection {
+    margin-top: 12vh;
+    width: 85%;
+    height: 90vh;
+}
+
+.introsection .title {
+    font-size: 200%;
+}
+
+.introsection .subtitle {
+    font-size: 130%;
+    line-height: 120%;
+}
+
+/*back-to-top-button*/
+.back-to-top-button {
+    bottom: 15px;
+    right: 15px;
+}
+
+.back-to-top-button a i {
+    padding: 5px 11px;
+    font-size: 20px;
+}
+
+/*aboutsection*/
+.aboutsection {
+    width: 90%;
+    margin: 50px auto;
+}
+
+/*services*/
+.services .heading {
+    height: 11.5vh;
+    line-height: 30px;
+}
+
+.services .main-heading {
+    font-size: 25px;
+}
+
+.services .sub-heading {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.services .services-cards {
+    grid-template-columns: repeat(1, auto);
+    padding: 10px 25px;
+}
+
+.services .card {
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.services .card .card-image {
+    height: auto;
+}
+
+.services .card .card-name {
+    font-size: 20px;
+}
+
+.services .card .card-info {
+    font-size: 18px;
+}
+
+.services .card .card-points {
+    line-height: 28px;
+    font-size: 18px;
+}
+
+/*testimonials*/
+.testimonials {
+    padding: 40px 0px;
+}
+
+.testimonials .heading {
+    padding: 0px;
+    padding-bottom: 15px;
+}
+
+.testimonialContainer {
+    text-align: center;
+    width: 90%;
+    padding: 25px;
+}
+
+.testimonialContainer .profilePic {
+    margin: auto;
+    float: none;
+    display: block;
+}
+
+.testimonialContainer .response {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*footer*/
+footer .creator {
+    font-size: 16px;
+    text-align: center;
+}
+
+footer .footer-links {
+    flex-direction: column;
+}
+
+.footer-links .footer {
+    flex-direction: column;
+}
+
+.footer-links .footer .footer-logo {
+    padding: 20px 0px;
+}
+
+.footer-links .footer-logo .heading {
+    font-size: 22px;
+}
+
+.footer-links .footer-logo img {
+    height: 50px;
+}
+
+.footer-links .footer .line {
+    display: none;
+}
+
+.footer-links .social-links {
+    padding: 20px 0px;
+}
+
+.footer-links .social-links a {
+    padding: 0px 8px;
+    font-size: 22px;
+}
+
+/*about*/
+.about {
+    margin-top: 12vh;
+}
+
+.about .about-container {
+    width: 90%;
+}
+
+.about-container .heading {
+    font-size: 28px;
+}
+
+.founder-container .founder-pic {
+    width: 15rem;
+}
+
+.founder-container .founder-text {
+    width: 90%;
+    text-align: center;
+}
+
+.team-rudramyog .yoga-teachers-cards {
+    padding: 0px 0px;
+}
+
+.team-rudramyog .heading {
+    padding: 30px 0px;
+}
+
+.team-rudramyog .yoga-teachers-cards .yoga-teacher {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px 0;
+    margin-bottom: 20px;
+}
+
+.team-rudramyog .yoga-teacher .yoga-teacher-text {
+    order: 2;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+.team-rudramyog .yoga-teacher .yoga-teacher-text .yoga-teacher-profession {
+    padding: 25px 0;
+    font-size: 17px;
+}
+
+.team-rudramyog .yoga-teacher .image {
+    order: 1;
+    width: 100%;
+}
+
+/*resgister*/
+.registration-cards {
+    margin-top: 12vh;
+}
+
+.registration-cards .card {
+    width: 90%;
+    margin: 6% 0%;
+    flex-direction: column;
+}
+
+.registration-cards .card .image-container {
+    width: 100%;
+}
+
+.registration-cards .card .card-content {
+    width: 100%;
+}
+
+.registration-cards .card .card-content .card-elements {
+    width: 90%;
+    padding: 5% 0%;
+}
+
+.registration-cards .card .card-elements .card-name {
+    font-size: 18px;
+}
+
+.registration-cards .card .card-elements .card-info {
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.registration-cards .card .card-elements .line {
+    margin: 22px 0px;
+}
+
+.registration-cards .card .card-elements .days-of-week,
+.registration-cards .card .card-content .price {
+    font-size: 16px;
+}
+
+.registration-cards .card .card-elements .price {
+    padding: 16px 0px;
+}
+
+.registration-cards .card .card-content .btn {
+    width: 100%;
+}
+
+/*class-demo*/
+.class-demo {
+    margin-top: 12vh;
+    padding: 20% 4%;
+}
+
+.video-container {
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 6px lightgray;
+}
+
+.video {
+    border-radius: 8px;
+}
+
+/*contact*/
+.contact {
+    margin-top: 12vh;
+    padding: 3%;
+}
+
+.contact .heading {
+    font-size: 30px;
+    padding: 3%;
+}
+
+.contact .contact-section {
+    flex-direction: column;
+}
+
+.contact-section .firsthalf {
+    padding: 3%;
+}
+
+.contact-section .firsthalf a {
+    font-size: 17px;
+}
+
+.contact-section .secondhalf {
+    width: 100%;
+    padding: 3%;
+}
+
+/*registration-form*/
+.registration {
+    margin-top: 12vh;
+}
+
+.registration .registration-container {
+    width: 90%;
+    margin: 8% auto;
+    padding: 20px;
+}
+
+.registration .registration-container .heading {
+    font-size: 22px;
+}
+
+.registration .registration-container .line {
+    margin: 20px 0;
+}
+
+.registration-container .form .field {
+    margin-bottom: 5%;
+}
+
+.registration-container .form .class-type table {
+    width: 100%;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.registration-container .form .class-type table,
+.registration-container .form .class-type th,
+.registration-container .form .class-type td {
+    padding: 10px;
+}
+
+.registration-container
+    .form
+    .terms-and-conditions
+    .terms-and-conditions-text
+    p,
+.registration-container .form .terms-and-conditions .acceptance {
+    text-align: justify;
+}
