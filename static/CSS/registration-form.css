@@ -123,6 +123,10 @@
     cursor: not-allowed;
 }
 
+.button-disabled:hover {
+    background-color: #5979fab4;
+}
+
 .button-enabled {
     background-color: #597afa;
     cursor: pointer;

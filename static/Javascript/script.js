@@ -1,7 +1,7 @@
 // Responsive Navbar
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+let hamburger = document.querySelector(".hamburger");
+let navLinks = document.querySelector(".nav-links");
+let links = document.querySelectorAll(".nav-links li");
 
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
@@ -38,7 +38,7 @@ checkbox.addEventListener('change', () => {
 function disableRightclick() {
     document.addEventListener('contextmenu', e => e.preventDefault());
 
-    var snackbar = document.getElementById("snackbar");
+    let snackbar = document.getElementById("snackbar");
 
     snackbar.className = "show";
 
@@ -46,3 +46,14 @@ function disableRightclick() {
         snackbar.className = snackbar.className.replace("show", "");
     }, 3000);
 }
+
+// Registration form to google sheet
+let scriptURL = 'https://script.google.com/macros/s/AKfycby7WYMH46OmNxAjjbWwl65FiFvi_VAQof7fM8B5vAbnyOV4ILNJgU06TuVoNLjQ12VBiw/exec';
+let form = document.forms['registration-form'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Registration form submitted!'))
+        .catch(error => console.error(error.message));
+});

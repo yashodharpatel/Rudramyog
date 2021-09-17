@@ -1,0 +1,24 @@
+{
+  "name": "rudramyog",
+  "version": "1.0.0",
+  "description": "This is a website created for yoga academy named rudramyog",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashodharpatel/Rudramyog.git"
+  },
+  "author": "Yashodhar Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashodharpatel/Rudramyog/issues"
+  },
+  "homepage": "https://github.com/yashodharpatel/Rudramyog#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.6",
+    "express": "^4.17.1"
+  }
+}
