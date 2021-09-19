@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="/static/CSS/responsive.css" media="screen and (max-width: 1100px)">
     <script defer src="/static/Javascript/script.js"></script>
     <script defer src="https://kit.fontawesome.com/676c98e749.js" crossorigin="anonymous"></script>
-    <title>Registration Form • RUDRA MYOG</title>
+    <title>Registration Form • RUDRAM YOG</title>
 </head>
 
 <body oncontextmenu="disableRightclick()">
     <nav class="navbar" id="navbar">
         <div class="logo">
-            <a href="/views/home.html"><img src="/src/logo/logo.jpeg" alt="logo" height="70" width="70"></a>
+            <a href="/views/index.html"><img src="/src/logo/logo.jpeg" alt="logo" height="70" width="70"></a>
         </div>
         <div class="hamburger">
             <div class="line"></div>
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="date field">
-                        <div class="date-text input-text">Date <span>*</span></div>
+                        <div class="date-text input-text">Today's Date <span>*</span></div>
                         <input class="form-input" type="date" name="Date" id="date" required>
                     </div>
 
@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="health-issue field">
-                        <div class="health-issue-text input-text">Health Issue</div>
+                        <div class="health-issue-text input-text">Any recent surgeries or pain (Health Issue)</div>
                         <input class="form-input" type="text" name="Health Issue" id="health-issue"
                             placeholder="Health Issue">
                     </div>
@@ -190,10 +190,10 @@
             <div class="footer">
                 <div class="footer-logo">
                     <img src="/src/images/lotus.png" alt="logo" height="65">
-                    <div class="heading">Rudra Myog</div>
+                    <div class="heading">Rudram Yog</div>
                 </div>
                 <div class="line"></div>
-                <div class="copyright">&copy; 2021 <span><a href="#">rudramyog.com</a></span></div>
+                <div class="copyright">&copy; 2021 <span><a href="/views/index.html">rudramyog.com</a></span></div>
             </div>
             <div class="social-links">
                 <a href="http://facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
@@ -207,5 +207,23 @@
     </footer>
 
 </body>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZxOSkVWf0pQ58EFYbJoy9DI7qJJhp5LmvNT_IkTZRh95e2E1G4sDf9-DmJooaed-WZA/exec';
+    const form = document.forms['registration-form'];
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                alert("Registration completed successfully!");
+                form.reset();
+            })
+            .catch(error => {
+                alert("Error! Something went wrong while receiving your data. Please enter all the valid data and try again.");
+                console.error(error.message);
+            });
+    });
+</script>
 
 </html>

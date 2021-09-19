@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="/static/CSS/responsive.css" media="screen and (max-width: 1100px)">
     <script defer src="/static/Javascript/script.js"></script>
     <script defer src="https://kit.fontawesome.com/676c98e749.js" crossorigin="anonymous"></script>
-    <title>Contact • RUDRA MYOG</title>
+    <title>Contact • RUDRAM YOG</title>
 </head>
 
 <body oncontextmenu="disableRightclick()">
     <nav class="navbar" id="navbar">
         <div class="logo">
-            <a href="/views/home.html"><img src="/src/logo/logo.jpeg" alt="logo" height="70" width="70"></a>
+            <a href="/views/index.html"><img src="/src/logo/logo.jpeg" alt="logo" height="70" width="70"></a>
         </div>
         <div class="hamburger">
             <div class="line"></div>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="mail">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:patelyashodhar012@gmail.com" target="blank">rudramyog@gmail.com</a>
+                    <a href="mailto:rudramyog@gmail.com" target="blank">rudramyog@gmail.com</a>
                 </div>
                 <div class="whatsaap">
                     <i class="fab fa-whatsapp"></i>
@@ -67,12 +67,15 @@
             </div>
             <div class="secondhalf">
                 <div class="contact-form">
-                    <form class="form" action="" method="POST" autocomplete="off">
+                    <form action="" method="POST" autocomplete="off" name="contact-form" class="form">
                         <input class="form-input" type="text" name="Name" id="name" placeholder="Your Name" required>
-                        <input class="form-input" type="email" name="Email" id="email" placeholder="Your Email" required>
+                        <input class="form-input" type="email" name="Email" id="email" placeholder="Your Email"
+                            required>
                         <input class="form-input" type="number" name="Phone" id="phone" placeholder="Your Phone">
-                        <input class="form-input" type="text" name="Subject" id="subject" placeholder="Subject" required>
-                        <textarea class="form-input" name="Message" id="message" cols="30" rows="6" placeholder="Message" required></textarea>
+                        <input class="form-input" type="text" name="Subject" id="subject" placeholder="Subject"
+                            required>
+                        <textarea class="form-input" name="Message" id="message" cols="30" rows="6"
+                            placeholder="Message" required></textarea>
                         <button type="submit" name="Submit" value="Send message" class="btn">Send Message</button>
                     </form>
                 </div>
@@ -85,10 +88,10 @@
             <div class="footer">
                 <div class="footer-logo">
                     <img src="/src/images/lotus.png" alt="logo" height="65">
-                    <div class="heading">Rudra Myog</div>
+                    <div class="heading">Rudram Yog</div>
                 </div>
                 <div class="line"></div>
-                <div class="copyright">&copy; 2021 <span><a href="#">rudramyog.com</a></span></div>
+                <div class="copyright">&copy; 2021 <span><a href="/views/index.html">rudramyog.com</a></span></div>
             </div>
             <div class="social-links">
                 <a href="http://facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
@@ -102,5 +105,23 @@
     </footer>
 
 </body>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwQYiVnrXyNJdJrxTG2RRkGnDN0cuFuk2b3jR3C6Wvh1dQuiMWMHi0prBfz7xhmNrDTYg/exec';
+    const form = document.forms['contact-form'];
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                alert("Thank you! Your submission is received and we will contact you soon.");
+                form.reset();
+            })
+            .catch(error => {
+                alert("Error! Something went wrong while receiving your data. Please enter all the valid data and try again.");
+                console.error(error.message);
+            });
+    });
+</script>
 
 </html>

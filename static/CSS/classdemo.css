@@ -3,9 +3,11 @@
     align-items: center;
     justify-content: center;
     padding: 3% 0%;
+    background-color: #fdeeed;
 }
 
 .video-container {
+    background-color: white;
     padding: 1%;
     border: 1px solid #ddd;
     border-radius: 8px;

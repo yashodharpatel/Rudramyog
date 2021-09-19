@@ -46,14 +46,3 @@ function disableRightclick() {
         snackbar.className = snackbar.className.replace("show", "");
     }, 3000);
 }
-
-// Registration form to google sheet
-let scriptURL = 'https://script.google.com/macros/s/AKfycby7WYMH46OmNxAjjbWwl65FiFvi_VAQof7fM8B5vAbnyOV4ILNJgU06TuVoNLjQ12VBiw/exec';
-let form = document.forms['registration-form'];
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => console.log('Registration form submitted!'))
-        .catch(error => console.error(error.message));
-});

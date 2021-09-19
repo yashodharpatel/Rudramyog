@@ -181,6 +181,13 @@ li.fade {
     font-size: 18px;
 }
 
+/*quotesection*/
+.quote-container .quote {
+    font-size: 55px;
+    width: 90%;
+    padding: 75px 0;
+}
+
 /*testimonials*/
 .testimonials {
     padding: 40px 0px;
@@ -348,6 +355,11 @@ footer .footer-links {
 
 .registration-cards .card .card-content .btn {
     width: 100%;
+}
+
+.register .note-container .note {
+    padding: 6% 4%;
+    text-align: justify;
 }
 
 /*class-demo*/

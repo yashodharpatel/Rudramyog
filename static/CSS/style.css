@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bree+Serif&family=Poppins&family=Raleway&family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -103,6 +98,7 @@ body {
 .introsection .btn {
     background-color: transparent;
     border: 2px solid black;
+    text-transform: uppercase;
 }
 
 .introsection .btn:hover {
@@ -278,16 +274,18 @@ body {
 /*quotesection*/
 .quote-container {
     background-color: #fdeeed;
-    text-align: center;
+    width: 100%;
 }
 
 .quote-container .quote {
     color: #2e2e2e;
     font-size: 55px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 100px 0;
     text-align: center;
     font-weight: lighter;
     line-height: 1.2em;
-    padding: 120px 60px;
     font-family: "Allison", cursive;
 }
 

@@ -1,0 +1,27 @@
+/*services*/
+.services .heading {
+    height: 30vh;
+    line-height: 45px;
+}
+
+.services .services-cards {
+    padding: 10px 25px;
+}
+
+.services .card {
+    width: 90%;
+}
+
+/*about*/
+.team-rudramyog .yoga-teachers-cards .yoga-teacher {
+    width: 75%;
+}
+
+.team-rudramyog .yoga-teacher .yoga-teacher-text .yoga-teacher-profession {
+    padding: 30px 0;
+}
+
+/*register*/
+.registration-cards .card {
+    width: 75%;
+}

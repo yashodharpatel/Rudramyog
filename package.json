@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/yashodharpatel/Rudramyog#readme",
   "dependencies": {
-    "@sendgrid/mail": "^7.4.6",
     "express": "^4.17.1"
   }
 }
