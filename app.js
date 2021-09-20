@@ -1,3 +1,5 @@
+const favicon = require('serve-favicon');
+const path = require('path');
 const express = require('express');
 const app = express();
 
@@ -8,6 +10,9 @@ app.use('/static', express.static('static'));
 app.use('/src', express.static('src'));
 app.use('/views', express.static('views'));
 app.use(express.urlencoded());
+
+// SERVE FAVICON
+app.use(favicon(path.join(__dirname, 'src', 'logo', 'favicon.ico')));
 
 // ENDPOINTS
 app.get('/', (req, res) => {
