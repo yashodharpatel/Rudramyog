@@ -62,11 +62,11 @@ body {
 }
 
 .nav-links li .active {
-    color: black;
+    text-shadow: 0 0 3px #597afa;
 }
 
 .nav-links li a:hover {
-    color: black;
+    text-shadow: 0 0 3px #597afa;
 }
 
 /*introsection*/
