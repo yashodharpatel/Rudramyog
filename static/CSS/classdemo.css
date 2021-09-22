@@ -3,12 +3,12 @@
     align-items: center;
     justify-content: center;
     padding: 3% 0%;
-    background-color: #fdeeed;
+    background-color: #f7f7f7;
 }
 
 .video-container {
     background-color: white;
-    padding: 1%;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
@@ -19,4 +19,5 @@
     height: auto;
     border-radius: 8px;
     border: none;
+    display: block;
 }
