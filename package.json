@@ -1,7 +1,7 @@
 {
   "name": "rudramyog",
   "version": "1.0.0",
-  "description": "This is a website created for yoga academy named rudramyog",
+  "description": "This is the official website of my client (Rudramyog).",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
