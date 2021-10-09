@@ -109,6 +109,7 @@
     .terms-and-conditions-text
     p {
     text-indent: 40px;
+    line-height: 22px;
 }
 
 .button-disabled {

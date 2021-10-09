@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fdeeed;
-    padding: 20px;
+    padding: 30px;
 }
 
 .founder-container .heading {
@@ -71,7 +71,8 @@
 .founder-container .founder-text {
     width: 75%;
     font-size: 20px;
-    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
     line-height: 24px;
     word-spacing: 4px;
     padding: 20px 0px;

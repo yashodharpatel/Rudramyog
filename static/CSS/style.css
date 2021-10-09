@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bree+Serif&family=Poppins&family=Raleway&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Bree+Serif&family=Poppins&family=Raleway&family=Roboto&display=swap");
 
 * {
     margin: 0;
@@ -311,6 +311,9 @@ body {
     margin: auto;
     padding: 35px 0px;
     line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonialContainer::after {
@@ -322,7 +325,6 @@ body {
 .testimonialContainer .profilePic {
     width: 200px;
     height: 200px;
-    float: left;
     margin-right: 50px;
     border-radius: 50%;
 }
@@ -392,8 +394,9 @@ footer .footer-links {
     text-decoration: none;
 }
 
-.footer .copyright a:hover, .footer-links .social-links a:hover {
-    color: #A0AEC0;
+.footer .copyright a:hover,
+.footer-links .social-links a:hover {
+    color: #a0aec0;
 }
 
 .footer-links .social-links a {

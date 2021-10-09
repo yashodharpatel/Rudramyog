@@ -203,6 +203,7 @@ li.fade {
     text-align: center;
     width: 90%;
     padding: 25px;
+    flex-direction: column;
 }
 
 .testimonialContainer .profilePic {
@@ -274,7 +275,7 @@ footer .footer-links {
 }
 
 .about .founder-container {
-    padding: 18px;
+    padding: 20px 18px;
 }
 
 .founder-container .founder-pic {
@@ -283,7 +284,6 @@ footer .footer-links {
 
 .founder-container .founder-text {
     width: 90%;
-    text-align: center;
 }
 
 .team-rudramyog .yoga-teachers-cards {
