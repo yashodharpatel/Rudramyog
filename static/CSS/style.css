@@ -11,9 +11,10 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
     cursor: default;
     user-select: none;
+    font-family: "Roboto", sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .background {
