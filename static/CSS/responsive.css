@@ -1,12 +1,13 @@
 /*navbar*/
 .navbar {
-    background-color: white;
     align-items: unset;
     padding: 0%;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     z-index: 100;
+    background-color: white;
+    box-shadow: 0px 1px 12px rgb(0 0 0 / 20%);
 }
 
 .logo {
@@ -108,7 +109,7 @@ li.fade {
 
 /*introsection*/
 .introsection {
-    margin-top: 12vh;
+    margin-top: 10vh;
     width: 85%;
     height: 90vh;
 }
@@ -262,7 +263,7 @@ footer .footer-links {
 
 /*about*/
 .about {
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 
 .about .about-container {
@@ -319,7 +320,7 @@ footer .footer-links {
 
 /*resgister*/
 .registration-cards {
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 
 .registration-cards .card {
@@ -374,7 +375,7 @@ footer .footer-links {
 
 /*class-demo*/
 .class-demo {
-    margin-top: 12vh;
+    margin-top: 10vh;
     padding: 20% 4%;
 }
 
@@ -390,7 +391,7 @@ footer .footer-links {
 
 /*contact*/
 .contact {
-    margin-top: 12vh;
+    margin-top: 10vh;
     padding: 3%;
 }
 
@@ -418,7 +419,7 @@ footer .footer-links {
 
 /*registration-form*/
 .registration {
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 
 .registration .registration-container {

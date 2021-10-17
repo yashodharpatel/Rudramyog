@@ -27,13 +27,17 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    height: 12vh;
+    height: 10vh;
     padding: 0% 7.5%;
     background-color: white;
+    box-shadow: 0px 1px 12px rgb(0 0 0 / 20%);
+    z-index: 10;
+    position: relative;
 }
 
 .transparent-navbar {
     background-color: transparent;
+    box-shadow: none;
 }
 
 .logo {
@@ -42,6 +46,7 @@ body {
 
 .logo img {
     border-radius: 5px;
+    display: block;
 }
 
 .nav-links {
