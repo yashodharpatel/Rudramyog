@@ -2,7 +2,7 @@
 
 This is the official website of my client (Rudramyog).
 
-Rudramyog is a yoga academy owned by Kanchan Patil.
+Rudramyog is a yoga academy owned by Mrs. Kanchan Patil.
 
 Into this website, I have added the automated email system for the clients of Rudramyog so that they can get the automatic emails from Rudramyog.
 
