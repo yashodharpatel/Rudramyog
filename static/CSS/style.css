@@ -232,15 +232,14 @@ body {
 
 .services .services-cards {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    padding: 50px 75px;
+    grid-template-columns: repeat(3, auto);
 }
 
 .services .card {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 50px auto;
-    padding: 30px;
+    padding: 25px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
@@ -253,8 +252,8 @@ body {
 
 .services .card .card-image {
     width: 100%;
-    max-width: 600px;
-    height: 350px;
+    max-width: 500px;
+    height: 300px;
     object-fit: cover;
     border-radius: 6px;
 }

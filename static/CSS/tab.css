@@ -12,6 +12,10 @@
     width: 90%;
 }
 
+.services .card .card-image {
+    height: auto;
+}
+
 /*about*/
 .team-rudramyog .yoga-teachers-cards .yoga-teacher {
     width: 75%;
